@@ -1,0 +1,8 @@
+.shards
+.crystal
+
+*.swp
+*.swo
+*~
+
+shard.lock
