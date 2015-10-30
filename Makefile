@@ -1,10 +1,15 @@
-.PHONY: default all install test
+.PHONY: default all install clean test
 
 default: all
-all: install test
+all: clean install test
 
 install:
 	crystal deps
 
 test:
 	crystal spec -v
+
+clean:
+	rm -rf .crystal
+	rm -rf .shard
+	rm -rf libs
