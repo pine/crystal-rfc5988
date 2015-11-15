@@ -20,8 +20,10 @@ require "rfc5988"
 
 values = RFC5988.parse("<http://www.example.com>; rel=\"prev\"")
 
-puts values[0].url # => http://www.example.com
-puts values[0].rel # => prev
+p values[0].url # => "http://www.example.com"
+p values[0].rel # => "prev"
+
+p RFC5988.build(values) # => "<http://www.example.com>; rel=\"prev\""
 ```
 
 ## Contributing
