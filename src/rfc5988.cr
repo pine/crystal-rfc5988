@@ -9,7 +9,7 @@ require "./rfc5988/*"
 # there are HTTP response headers of GitHub API:
 #
 # ```
-# Link: <https://api.github.com/search/code?q=addClass+user%3Amozilla&page=15>; rel="next",
+# Link: &lt;https://api.github.com/search/code?q=addClass+user%3Amozilla&page=15>; rel="next",
 #   &lt;https://api.github.com/search/code?q=addClass+user%3Amozilla&page=34>; rel="last",
 #   &lt;https://api.github.com/search/code?q=addClass+user%3Amozilla&page=1&>; rel="first",
 #   &lt;https://api.github.com/search/code?q=addClass+user%3Amozilla&page=13>; rel="prev"
