@@ -24,14 +24,14 @@ module RFC5988
 
     def build(values)
       strs = if values.is_a? Array(LinkValue)
-        values.map do |value|
-          parts = value.params.map {|k, v| build_link_param(k, v) }
-          parts.unshift pack_url(value.url)
-          join_build_link_parts(parts) as String
-         end
-      else
-        [] of String
-      end
+               values.map do |value|
+                 parts = value.params.map { |k, v| build_link_param(k, v) }
+                 parts.unshift pack_url(value.url)
+                 join_build_link_parts(parts) as String
+               end
+             else
+               [] of String
+             end
 
       join_build_strings(strs)
     end

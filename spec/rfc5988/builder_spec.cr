@@ -42,9 +42,9 @@ module RFC5988
       builder.build([] of LinkValue).should eq("")
 
       values = [
-        LinkValue.new("URL1"),
-        LinkValue.new("URL2", { "key" => "value" }),
-      ]
+                 LinkValue.new("URL1"),
+                 LinkValue.new("URL2", {"key" => "value"}),
+               ]
       builder.build(values).should eq("<URL1>, <URL2>; key=\"value\"")
     end
   end

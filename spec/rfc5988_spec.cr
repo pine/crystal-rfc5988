@@ -10,7 +10,7 @@ module RFC5988
     end
 
     it :build do
-      header = RFC5988.build([LinkValue.new("URL1", { "rel" => "next" })])
+      header = RFC5988.build([LinkValue.new("URL1", {"rel" => "next"})])
       header.should eq("<URL1>; rel=\"next\"")
     end
   end

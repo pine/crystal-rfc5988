@@ -20,7 +20,7 @@ require "./rfc5988/*"
 #
 # ```crystal
 # require "rfc5988"
-#
+# 
 # values = RFC5988.parse("<http://www.example.com/next.html>; rel=\"next\"")
 # p values[0].url # => "http://www.example.com/next.html"
 # p values[0].rel # => "next"
@@ -30,8 +30,8 @@ require "./rfc5988/*"
 #
 # ```crystal
 # require "rfc5988"
-#
-# values = [ LinkValue.new("http://www.example.com", { "rel" => "next" }) ]
+# 
+# values = [LinkValue.new("http://www.example.com", {"rel" => "next"})]
 # p RFC5988.build(values) # => "<http://www.example.com>; rel=\"next\""
 # ```
 #

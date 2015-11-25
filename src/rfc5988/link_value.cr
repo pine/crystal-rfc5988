@@ -6,7 +6,7 @@ module RFC5988
     def initialize(@url, @params = {} of String => String)
     end
 
-    LINK_PARAM_KEYS = %w{rel anchor rev herflang media title type}
+    LINK_PARAM_KEYS = %w(rel anchor rev herflang media title type)
     {% for name, index in LINK_PARAM_KEYS %}
       def {{name.id}}
         @params[{{name}}]?
