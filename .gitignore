@@ -1,8 +1,11 @@
 .shards
 .crystal
+doc/
 
 *.swp
 *.swo
 *~
+
+.DS_Store
 
 shard.lock
