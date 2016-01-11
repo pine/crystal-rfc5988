@@ -10,7 +10,7 @@ Add it to `shard.yml`
 dependencies:
   rfc5988:
     github: pine613/crystal-rfc5988
-    branch: master
+    version: ~> 0.1.1
 ```
 
 ## Usage
