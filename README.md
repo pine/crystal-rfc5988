@@ -1,4 +1,8 @@
-# RFC5988 - Link Header [![Build Status](https://travis-ci.org/pine613/crystal-rfc5988.svg?branch=master)](https://travis-ci.org/pine613/crystal-rfc5988) [![docrystal.org](http://docrystal.org/badge.svg?style=round)](http://docrystal.org/github.com/pine613/crystal-rfc5988)
+# RFC5988 - Link Header
+[![Build Status](https://travis-ci.org/pine613/crystal-rfc5988.svg?branch=master)](https://travis-ci.org/pine613/crystal-rfc5988)
+[![Dependency Status](https://shards.rocks/badge/github/pine613/crystal-rfc5988/status.svg)](https://shards.rocks/github/pine613/crystal-rfc5988)
+[![Dependency Status](https://shards.rocks/badge/github/pine613/crystal-rfc5988/dev_status.svg)](https://shards.rocks/github/pine613/crystal-rfc5988)
+[![docrystal.org](http://docrystal.org/badge.svg?style=round)](http://docrystal.org/github.com/pine613/crystal-rfc5988)
 
 Crystal implementation of [RFC5988](https://tools.ietf.org/html/rfc5988) parser and builder.
 
