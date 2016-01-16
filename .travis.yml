@@ -5,11 +5,9 @@ env:
   global:
     - PATH=$HOME/.crenv/bin:$PATH
   matrix:
-    - CRYSTAL_VERSION=0.9.0
     - CRYSTAL_VERSION=0.9.1
-    - CRYSTAL_VERSION=0.10.0
-    - CRYSTAL_VERSION=0.10.1
-
+    - CRYSTAL_VERSION=0.10.2
+    
 install:
   - curl -L https://raw.github.com/pine613/crenv/master/install.sh | bash
   - eval "$(crenv init -)"
