@@ -8,6 +8,7 @@ env:
     - CRYSTAL_VERSION=0.9.1
     - CRYSTAL_VERSION=0.10.2
     - CRYSTAL_VERSION=0.11.1
+    - CRYSTAL_VERSION=0.12.0
 
 install:
   - curl -L https://raw.github.com/pine613/crenv/master/install.sh | bash
