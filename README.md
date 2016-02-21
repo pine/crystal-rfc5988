@@ -14,7 +14,7 @@ Add it to `shard.yml`
 dependencies:
   rfc5988:
     github: pine613/crystal-rfc5988
-    version: ~> 0.1.1
+    version: ~> 0.1.2
 ```
 
 ## Usage
