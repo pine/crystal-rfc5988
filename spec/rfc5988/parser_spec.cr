@@ -8,7 +8,7 @@ module RFC5988
   describe ParserUtils do
     utils = ParserUtilsImpl.new
 
-    it :split_link_values do
+    it "split_link_values" do
       utils.split_link_values(nil).should be_a(Array(String))
       utils.split_link_values(nil).should eq([] of String)
 
@@ -16,7 +16,7 @@ module RFC5988
       utils.split_link_values(header).should eq(["<URL1>; rel=\"next\"", "URL2>; rel=\"prev\""])
     end
 
-    it :split_link_value do
+    it "split_link_value" do
       utils.split_link_value(nil).should be_a(Array(String))
       utils.split_link_value(nil).should eq([] of String)
 
@@ -24,13 +24,13 @@ module RFC5988
       utils.split_link_value(value).should eq(["<URL1>", " rel=\"next\""])
     end
 
-    it :split_link_param do
+    it "split_link_param" do
       utils.split_link_param("").should eq({} of String => String)
       utils.split_link_param("rel=next").should eq({"rel" => "next"})
       utils.split_link_param("rel=\"next\"").should eq({"rel" => "next"})
     end
 
-    it :chomp_uri_reference do
+    it "chomp_uri_reference" do
       utils.chomp_uri_reference(["<URL"]).should eq("URL")
       utils.chomp_uri_reference(["URL>"]).should eq("URL")
       utils.chomp_uri_reference(["<URL>"]).should eq("URL")
@@ -38,11 +38,11 @@ module RFC5988
   end
 
   describe Parser do
-    it :initialize do
+    it "initialize" do
       Parser.new.should be_a(Parser)
     end
 
-    it :parse do
+    it "parse" do
       parser = Parser.new
       values = parser.parse("<URL1>; rel=\"next\"; anchor=0, <URL2>")
 
