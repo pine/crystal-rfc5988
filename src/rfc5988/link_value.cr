@@ -1,9 +1,9 @@
 module RFC5988
   class LinkValue
-    property :url
-    property :params
+    property url
+    property params
 
-    def initialize(@url, @params = {} of String => String)
+    def initialize(@url : String, @params = {} of String => String)
     end
 
     LINK_PARAM_KEYS = %w(rel anchor rev herflang media title type)
